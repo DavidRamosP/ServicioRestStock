@@ -22,7 +22,6 @@ import lombok.Setter;
 @Table(name="proveedor")
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
 public class Proveedor {
 
@@ -34,9 +33,46 @@ public class Proveedor {
 	@Column(name = "RUC_PROVEEDOR" , nullable = false, unique = true)
 	private String ruc;
 	
+	
 	@Column(name = "NOMBRE_PROVEEDOR", nullable = false, unique = true)
 	private String nombre;
 	
+	
 	@Column(name = "MARCA_PROVEEDOR", nullable = false, unique = true)
 	private String marca;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getRuc() {
+		return ruc;
+	}
+
+	public void setRuc(String ruc) {
+		this.ruc = ruc;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getMarca() {
+		return marca;
+	}
+
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+	
+	
+	
 }

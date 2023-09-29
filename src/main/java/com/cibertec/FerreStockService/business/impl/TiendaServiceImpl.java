@@ -10,11 +10,13 @@ import com.cibertec.FerreStockService.model.Tienda;
 import com.cibertec.FerreStockService.repository.TiendaRepository;
 
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class TiendaServiceImpl implements TiendaService {
 
+	
 	private TiendaRepository repository;
 	
 	@Override
