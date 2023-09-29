@@ -26,6 +26,46 @@ public class Producto {
 	@Column(name = "SKU_PRODUC")
 	private int sku;
 	
+	public int getSku() {
+		return sku;
+	}
+
+	public void setSku(int sku) {
+		this.sku = sku;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public double getPrecio() {
+		return precio;
+	}
+
+	public void setPrecio(double precio) {
+		this.precio = precio;
+	}
+
+	public Proveedor getProveedor() {
+		return proveedor;
+	}
+
+	public void setProveedor(Proveedor proveedor) {
+		this.proveedor = proveedor;
+	}
+
+	public TipoUnidad getUnidad() {
+		return unidad;
+	}
+
+	public void setUnidad(TipoUnidad unidad) {
+		this.unidad = unidad;
+	}
+
 	@Column(name = "NOMBRE_PRODUC")
 	private String nombre;
 	
