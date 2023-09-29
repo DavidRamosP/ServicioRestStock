@@ -15,7 +15,6 @@ import lombok.Setter;
 @Table(name="proveedor")
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
 public class Proveedor {
 
@@ -27,8 +26,10 @@ public class Proveedor {
 	@Column(name = "RUC_PROVEEDOR" , nullable = false, unique = true)
 	private String ruc;
 	
+	
 	@Column(name = "NOMBRE_PROVEEDOR", nullable = false, unique = true)
 	private String nombre;
+	
 	
 	@Column(name = "MARCA_PROVEEDOR", nullable = false, unique = true)
 	private String marca;
